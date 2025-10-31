@@ -1,0 +1,10 @@
+{
+  "num_predictions": 3,
+  "use_tta": true,
+  "columns": [
+    "id",
+    "winner_model_a",
+    "winner_model_b",
+    "winner_tie"
+  ]
+}

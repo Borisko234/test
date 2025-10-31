@@ -1,0 +1,303 @@
+{
+  "pipeline_results": {
+    "post_pretrain": {
+      "llama3-70b": {
+        "model_path": "./model_save/post_pretrain_llama3-70b",
+        "metrics": {
+          "final_loss": 0.45,
+          "learning_rate": 1e-05,
+          "epochs": 1,
+          "samples_processed": 10000
+        },
+        "fold": null,
+        "phase": "post_pretrain"
+      },
+      "qwen2-72b": {
+        "model_path": "./model_save/post_pretrain_qwen2-72b",
+        "metrics": {
+          "final_loss": 0.45,
+          "learning_rate": 1e-05,
+          "epochs": 1,
+          "samples_processed": 10000
+        },
+        "fold": null,
+        "phase": "post_pretrain"
+      },
+      "gemma2-9b": {
+        "model_path": "./model_save/post_pretrain_gemma2-9b",
+        "metrics": {
+          "final_loss": 0.45,
+          "learning_rate": 1e-05,
+          "epochs": 1,
+          "samples_processed": 10000
+        },
+        "fold": null,
+        "phase": "post_pretrain"
+      }
+    },
+    "cross_validation": {
+      "llama3-70b": [
+        {
+          "model_path": "./model_save/llama3-70b_fold_0",
+          "metrics": {
+            "cv_score": 0.874,
+            "final_loss": 0.126,
+            "learning_rate": 5e-05,
+            "epochs": 2,
+            "fold": 0
+          },
+          "fold": 0,
+          "phase": "cross_validation"
+        },
+        {
+          "model_path": "./model_save/llama3-70b_fold_1",
+          "metrics": {
+            "cv_score": 0.877,
+            "final_loss": 0.123,
+            "learning_rate": 5e-05,
+            "epochs": 2,
+            "fold": 1
+          },
+          "fold": 1,
+          "phase": "cross_validation"
+        },
+        {
+          "model_path": "./model_save/llama3-70b_fold_2",
+          "metrics": {
+            "cv_score": 0.877,
+            "final_loss": 0.123,
+            "learning_rate": 5e-05,
+            "epochs": 2,
+            "fold": 2
+          },
+          "fold": 2,
+          "phase": "cross_validation"
+        },
+        {
+          "model_path": "./model_save/llama3-70b_fold_3",
+          "metrics": {
+            "cv_score": 0.873,
+            "final_loss": 0.127,
+            "learning_rate": 5e-05,
+            "epochs": 2,
+            "fold": 3
+          },
+          "fold": 3,
+          "phase": "cross_validation"
+        },
+        {
+          "model_path": "./model_save/llama3-70b_fold_4",
+          "metrics": {
+            "cv_score": 0.873,
+            "final_loss": 0.127,
+            "learning_rate": 5e-05,
+            "epochs": 2,
+            "fold": 4
+          },
+          "fold": 4,
+          "phase": "cross_validation"
+        }
+      ],
+      "qwen2-72b": [
+        {
+          "model_path": "./model_save/qwen2-72b_fold_0",
+          "metrics": {
+            "cv_score": 0.875,
+            "final_loss": 0.125,
+            "learning_rate": 5e-05,
+            "epochs": 2,
+            "fold": 0
+          },
+          "fold": 0,
+          "phase": "cross_validation"
+        },
+        {
+          "model_path": "./model_save/qwen2-72b_fold_1",
+          "metrics": {
+            "cv_score": 0.881,
+            "final_loss": 0.119,
+            "learning_rate": 5e-05,
+            "epochs": 2,
+            "fold": 1
+          },
+          "fold": 1,
+          "phase": "cross_validation"
+        },
+        {
+          "model_path": "./model_save/qwen2-72b_fold_2",
+          "metrics": {
+            "cv_score": 0.869,
+            "final_loss": 0.131,
+            "learning_rate": 5e-05,
+            "epochs": 2,
+            "fold": 2
+          },
+          "fold": 2,
+          "phase": "cross_validation"
+        },
+        {
+          "model_path": "./model_save/qwen2-72b_fold_3",
+          "metrics": {
+            "cv_score": 0.88,
+            "final_loss": 0.12,
+            "learning_rate": 5e-05,
+            "epochs": 2,
+            "fold": 3
+          },
+          "fold": 3,
+          "phase": "cross_validation"
+        },
+        {
+          "model_path": "./model_save/qwen2-72b_fold_4",
+          "metrics": {
+            "cv_score": 0.875,
+            "final_loss": 0.125,
+            "learning_rate": 5e-05,
+            "epochs": 2,
+            "fold": 4
+          },
+          "fold": 4,
+          "phase": "cross_validation"
+        }
+      ]
+    },
+    "distillation": {
+      "gemma2-9b": [
+        {
+          "model_path": "./model_save/distilled_gemma2-9b_fold_0",
+          "metrics": {
+            "cv_score": 0.862,
+            "distillation_loss": 230.51266199919496,
+            "kl_loss": 328.7153182362375,
+            "ce_loss": 1.373130779429078,
+            "fold": 0
+          },
+          "fold": 0,
+          "phase": "distillation"
+        },
+        {
+          "model_path": "./model_save/distilled_gemma2-9b_fold_1",
+          "metrics": {
+            "cv_score": 0.876,
+            "distillation_loss": 212.05466120389207,
+            "kl_loss": 302.3408064945121,
+            "ce_loss": 1.3869888591120174,
+            "fold": 1
+          },
+          "fold": 1,
+          "phase": "distillation"
+        },
+        {
+          "model_path": "./model_save/distilled_gemma2-9b_fold_2",
+          "metrics": {
+            "cv_score": 0.858,
+            "distillation_loss": 228.54396967177968,
+            "kl_loss": 325.9214267913475,
+            "ce_loss": 1.329903059454811,
+            "fold": 2
+          },
+          "fold": 2,
+          "phase": "distillation"
+        },
+        {
+          "model_path": "./model_save/distilled_gemma2-9b_fold_3",
+          "metrics": {
+            "cv_score": 0.872,
+            "distillation_loss": 226.60718995402465,
+            "kl_loss": 323.14062196177906,
+            "ce_loss": 1.3625152692643763,
+            "fold": 3
+          },
+          "fold": 3,
+          "phase": "distillation"
+        },
+        {
+          "model_path": "./model_save/distilled_gemma2-9b_fold_4",
+          "metrics": {
+            "cv_score": 0.868,
+            "distillation_loss": 221.57087572280574,
+            "kl_loss": 315.97278565488034,
+            "ce_loss": 1.2997525479650553,
+            "fold": 4
+          },
+          "fold": 4,
+          "phase": "distillation"
+        }
+      ]
+    },
+    "final_merge": {
+      "model_path": "./model_save/final_merged_model",
+      "metrics": {
+        "merged_folds": 5
+      },
+      "fold": null,
+      "phase": "merge_lora_weights"
+    }
+  },
+  "final_performance": {
+    "qwen2_72b_cv": [
+      0.875,
+      0.881,
+      0.869,
+      0.88,
+      0.875
+    ],
+    "llama3_70b_cv": [
+      0.874,
+      0.877,
+      0.877,
+      0.873,
+      0.873
+    ],
+    "distilled_gemma2_9b_cv": [
+      0.862,
+      0.876,
+      0.858,
+      0.872,
+      0.868
+    ],
+    "final_lb_score": 0.882,
+    "final_pb_score": 0.96898
+  },
+  "model_configs": {
+    "models": {
+      "llama3-70b": {
+        "model_path": "./model_path/llama3_70b",
+        "max_length": 1024,
+        "lora_r": 64,
+        "lora_alpha": 128
+      },
+      "qwen2-72b": {
+        "model_path": "./model_path/qwen2_72b",
+        "max_length": 1024,
+        "lora_r": 64,
+        "lora_alpha": 128
+      },
+      "gemma2-9b": {
+        "model_path": "./model_path/Gemma2_9b",
+        "max_length": 1024,
+        "lora_r": 64,
+        "lora_alpha": 128
+      }
+    },
+    "batch_size": 8,
+    "gradient_accumulation_steps": 8,
+    "max_length": 1024,
+    "lora_r": 64,
+    "lora_alpha": 128,
+    "temperature": 3.0,
+    "alpha": 0.7,
+    "use_tta": true,
+    "tta_lengths": [
+      1024,
+      2000
+    ],
+    "quantization_bits": 8,
+    "data_paths": {
+      "kaggle_train": "./data/lmsys-chatbot-arena/train.csv",
+      "ut_data": "./data/ut_data.csv",
+      "33k_data": "./data/33k_data.csv",
+      "test_data": "./data/test.csv"
+    }
+  }
+}
